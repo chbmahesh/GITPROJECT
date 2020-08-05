@@ -25,9 +25,10 @@ pipeline {
 		}
 		stage ('Email') {
 			steps{
-			mail bcc: '', body: '''Jenkins job executed Successfully !!!!
-
-			Thank you !!!''', cc: 'rajeshberi369@gmail.com;Vijaysurnila@gmail.con', from: '', replyTo: '', subject: 'Jenkins Build Staus', to: 'chbmaheshrao001@gmail.com;sharathagapes@gmail.com;rathodgopal98@gmail.com;manikanta.4b1@gmail.com;'
+				
+			mail bcc: '', body: '''Jenkins Pipeline status success !!!
+ 
+			Thanks !!!''', cc: '', from: '', replyTo: '', subject: 'Jenkins Pipeline status', to: 'chbmaheshrao001@gmail.com'
 			}
 		}
 	}
