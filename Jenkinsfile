@@ -22,5 +22,12 @@ pipeline {
 			echo "Running Selenium test scripts."
 			}        
 		}
+		stage ('Email') {
+			steps{
+			mail bcc: '', body: '''Jenkins pipeline executed successfully.... !
+
+			Thanks !!''', cc: '', from: '', replyTo: '', subject: 'Jenkins Pipeline Job status', to: 'chbmaheshrao001@gmail.com'
+			}
+		}
 	}
 }
